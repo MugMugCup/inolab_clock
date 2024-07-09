@@ -1,0 +1,12 @@
+.wave {
+    position: relative;
+    height: 200px;
+    /*何も表示されない場合は各波の親要素に高さを持たせましょう。*/
+}
+
+canvas {
+    position: absolute;
+    bottom: 65vw;
+    left: 0;
+    width: 100%;
+}
