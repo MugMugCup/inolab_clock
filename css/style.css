@@ -50,6 +50,21 @@ body {
     font-size: 13vh;
 }
 
-#data {
+#date {
     font-size: 5vh;
+}
+
+/* デッドライン */
+#dead_line_cont {
+    text-align: center;
+}
+
+#dead_line_text {
+    font-size: 7vh;
+    color: rgb(255, 0, 0);
+}
+
+#dead_date {
+    font-size: 8.5vh;
+    color: rgb(255, 0, 0)
 }
