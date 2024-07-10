@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>inolab_clock</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <!--<link rel="stylesheet" type="text/css" href="css/5-14.css">-->
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inolab_clock</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/5-14.css">-->
-</head>
+    <body>
+        <div id="content">
+            <!-- ロゴ -->
+            <div id="logo">
+                <img id="ai_lab" src="img/Innovation-AI-LAB.png" />
+                <img id="fab_lab" src="img/Innovation-Fab-LAB.png" />
+            </div>
 
-<body>
-    <div id="content">
-        <!-- ロゴ -->
-        <div id="logo">
-            <img id="ai_lab" src="img/Innovation-AI-LAB.png">
-            <img id="fab_lab" src="img/Innovation-Fab-LAB.png">
+            <!-- 時計 -->
+            <div id="disp">
+                <div id="move_conte">
+                    <div class="line_d" id="line_0"></div>
+                    <div class="line_d" id="line_1"></div>
+                    &nbsp;
+                    <div class="line_d" id="line_2"></div>
+                    <div class="line_d" id="line_3"></div>
+                    &nbsp;
+                    <div class="line_d" id="line_4"></div>
+                    <div class="line_d" id="line_5"></div>
+                </div>
+
+                <div id="disp_mas">
+                    <div id="dis_mas_in"><span id="time_line_0"></span><span id="time_line_1"></span>:<span id="time_line_2"></span><span id="time_line_3"></span>:<span id="time_line_4"></span><span id="time_line_5"></span></div>
+                </div>
+                <div id="disp_up"></div>
+            </div>
+            <div id="date" style="text-align: center"></div>
+            <!-- デッドライン -->
+            <div id="dead_line_cont">
+                <div id="dead_line_text">DEAD-LINE:</div>
+                <div id="dead_date"></div>
+            </div>
         </div>
 
-        <!-- 時計 -->
-        <div id="disp">
-            <div id="time"></div>
-            <div id="date"></div>
-        </div>
+        <!--<canvas id="waveCanvas"></canvas>-->
 
-        <!-- デッドライン -->
-        <div id="dead_line_cont">
-            <div id="dead_line_text">DEAD-LINE:</div>
-            <div id="dead_date"></div>
-        </div>
-    </div>
-
-    <!--<canvas id="waveCanvas"></canvas>-->
-
-    <script src="js/main.js"></script>
-    <!--<script src="js/5-14.js"></script>-->
-</body>
-
+        <script src="js/main.js"></script>
+        <script src="js/clock_smart.js"></script>
+        <!--<script src="js/5-14.js"></script>-->
+    </body>
 </html>
